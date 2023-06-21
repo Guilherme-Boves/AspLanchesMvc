@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "C7jwddW48gq6qosLWHFsmNO8S1z4CzEkSR8RlsX0GsC73LV860ZFZHPTpPuZ4nnxPfdhDdNx/ZuAQN0cQABVWw==",
+  "dgSpecHash": "gaV+9mM9/xlnNgRff9+FT9Hm3nsYQg7g3LIo26b+azWWBjvewiGNlRPPSoD/vPDrevGfL5GxioJVzjYTfw77PA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\AspLanches.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\Guilherme Boves\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.0\\microsoft.entityframeworkcore.design.6.0.0.nupkg.sha512",
     "C:\\Users\\Guilherme Boves\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.0\\microsoft.entityframeworkcore.relational.6.0.0.nupkg.sha512",
     "C:\\Users\\Guilherme Boves\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.0\\microsoft.entityframeworkcore.sqlserver.6.0.0.nupkg.sha512",
+    "C:\\Users\\Guilherme Boves\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.0\\microsoft.entityframeworkcore.tools.6.0.0.nupkg.sha512",
     "C:\\Users\\Guilherme Boves\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Guilherme Boves\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0\\microsoft.extensions.caching.memory.6.0.0.nupkg.sha512",
     "C:\\Users\\Guilherme Boves\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
