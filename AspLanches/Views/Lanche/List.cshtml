@@ -1,16 +1,20 @@
-﻿@model IEnumerable<AspLanches.Models.Lanche>
+﻿@model LancheListViewModel
 
 @{
     ViewData["Title"] = "Todos os lanches";
 }
 
 <div> <h2>@ViewData["Title"]</h2></div>
+<hr />
+<h3>@ViewBag.Total @ViewBag.TotalLanches</h3>
 
-@foreach(var lanche in Model)
-{
-    <div>
-        <h4>@lanche.Nome</h4>
-        <p><img src="@lanche.ImagemUrl"/></p>
-        <h3>Preço: @lanche.Preco.ToString("c")</h3>
+@*<h3>@TempData["Nome"]</h3>*@
+
+<div class="container">
+    <div class="row">
+        @foreach (var lanche in Model.Lanches)
+        {
+           <partial name="_LanchesResumo" for="@lanche" />
+        }
     </div>
-}
+</div>
