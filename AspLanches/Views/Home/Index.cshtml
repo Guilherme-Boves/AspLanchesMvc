@@ -1,3 +1,12 @@
-﻿<h1>View Index</h1>
+﻿@model HomeViewModel
 
 <partial name="_Carousel" />
+<br />
+<h2>Os preferidos da semana</h2>
+<br />
+<div class="row">
+    @foreach(var lanche in Model.LanchesPreferido)
+    {
+        <partial name="_LanchesResumo" for="@lanche" /> 
+    }
+</div>
