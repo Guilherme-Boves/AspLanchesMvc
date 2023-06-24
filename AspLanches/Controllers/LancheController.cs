@@ -19,11 +19,12 @@ namespace AspLanches.Controllers
             IEnumerable<Lanche> lanches;
             string categoriaAtual = string.Empty;
 
-            if(string.IsNullOrEmpty(categoria))
+            if (string.IsNullOrEmpty(categoria))
             {
                 lanches = _lancheRepository.Lanches.OrderBy(l => l.LancheId);
                 categoriaAtual = "Todos os Lanches";
-            } else
+            }
+            else
             {
                 lanches = _lancheRepository.Lanches
                     .Where(l => l.Categoria.CategoriaNome.Equals(categoria))
@@ -38,6 +39,12 @@ namespace AspLanches.Controllers
             };
 
             return View(lanchesListViewModel);
+        }
+
+        public IActionResult Details(int lancheId)
+        {
+            var lanche = _lancheRepository.Lanches.FirstOrDefault(l => l.LancheId == lancheId);
+            return View(lanche);
         }
     }
 }
