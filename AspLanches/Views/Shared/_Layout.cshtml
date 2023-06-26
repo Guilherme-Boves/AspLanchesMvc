@@ -19,7 +19,7 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     @await Component.InvokeAsync("CarrinhoCompraResumo")
-                    <form class="navbar-form navbar-right" asp-controller="Lanche" asp-action="Search" method="get">
+                    <form class="navbar-form navbar-right me-2" asp-controller="Lanche" asp-action="Search" method="get">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Procurar produto" name="searchString" value="@ViewData["searchString"]" />
                         </div>
