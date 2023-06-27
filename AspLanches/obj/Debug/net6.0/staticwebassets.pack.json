@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\images\\delete.png"
     },
     {
+      "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\logout_white.png",
+      "PackagePath": "staticwebassets\\images\\logout_white.png"
+    },
+    {
       "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\remove.ico",
       "PackagePath": "staticwebassets\\images\\remove.ico"
     },
