@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FyyPQguLq0uiYFt3at3rjMYMIfM60E2rGWRbqRfylb8=",
+  "Hash": "0VILavMeDIZO3j1wmjFPIRCyClcaeBmi0M/9aXOmM3I=",
   "Source": "AspLanches",
   "BasePath": "_content/AspLanches",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\admin.png",
+      "SourceId": "AspLanches",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\",
+      "BasePath": "_content/AspLanches",
+      "RelativePath": "images/admin.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\admin.png"
+    },
+    {
+      "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\admin_white.png",
+      "SourceId": "AspLanches",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\",
+      "BasePath": "_content/AspLanches",
+      "RelativePath": "images/admin_white.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\admin_white.png"
     },
     {
       "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\carousel1.jpg",
