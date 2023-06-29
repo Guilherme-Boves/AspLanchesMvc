@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0VILavMeDIZO3j1wmjFPIRCyClcaeBmi0M/9aXOmM3I=",
+  "Hash": "vQkL8ew3zgo/G5v5A2sQR5cHpi4p0i684ZpP7tN5gNw=",
   "Source": "AspLanches",
   "BasePath": "_content/AspLanches",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\access_denied.png",
+      "SourceId": "AspLanches",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\",
+      "BasePath": "_content/AspLanches",
+      "RelativePath": "images/access_denied.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\access_denied.png"
     },
     {
       "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\admin.png",

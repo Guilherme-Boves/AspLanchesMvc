@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\Full-Cart-icon.png"
     },
     {
+      "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\access_denied.png",
+      "PackagePath": "staticwebassets\\images\\access_denied.png"
+    },
+    {
       "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\admin.png",
       "PackagePath": "staticwebassets\\images\\admin.png"
     },
