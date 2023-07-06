@@ -9,6 +9,7 @@ using AspLanches.Context;
 using AspLanches.Models;
 using Microsoft.AspNetCore.Authorization;
 using ReflectionIT.Mvc.Paging;
+using AspLanches.ViewModels;
 
 namespace AspLanches.Areas.Admin.Controllers
 {
@@ -21,6 +22,28 @@ namespace AspLanches.Areas.Admin.Controllers
         public AdminPedidosController(AppDbContext context)
         {
             _context = context;
+        }
+
+        public IActionResult PedidoLanches(int? id)
+        {
+            var pedido = _context.Pedidos
+                .Include(pd => pd.PedidoItens)
+                .ThenInclude(l => l.Lanche)
+                .FirstOrDefault(p => p.PedidoId == id);
+
+            if(pedido == null)
+            {
+                Response.StatusCode = 404;
+                return View("PedidoNotFound", id.Value);
+            }
+
+            PedidoLancheViewModel pedidoLancheViewModel = new PedidoLancheViewModel
+            {
+                Pedido = pedido,
+                PedidoDetalhes = pedido.PedidoItens
+            };
+
+            return View(pedidoLancheViewModel);
         }
 
         // GET: Admin/AdminPedidos
