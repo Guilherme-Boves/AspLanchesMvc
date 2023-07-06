@@ -1,4 +1,5 @@
-﻿using AspLanches.Context;
+﻿using AspLanches.Areas.Admin.Servicos;
+using AspLanches.Context;
 using AspLanches.Models;
 using AspLanches.Repositories;
 using AspLanches.Repositories.Interfaces;
@@ -31,6 +32,7 @@ public class Startup
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddTransient<IPedidoRepository, PedidoRepository>();
         services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
+        services.AddScoped<RelatorioVendasService>();
 
         services.AddAuthorization(options =>
         {
