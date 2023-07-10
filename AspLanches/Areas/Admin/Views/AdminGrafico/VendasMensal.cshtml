@@ -28,6 +28,7 @@
         })
     }
 
+    // Prepara os dados obtidos
     function GraficoVendasLanches(data) {
         var dataArray = [
             ['Lanche', 'Quantidade', 'Valores(R$)']
@@ -40,6 +41,13 @@
 
         var options = {
             title: 'Lanches - Vendas nos últimos 30 dias',
+
+            animation: {
+                duration: 2000,
+                easing: 'out',
+                startup: true
+            },
+
             chartArea: {
                 width: '70%'
             },
