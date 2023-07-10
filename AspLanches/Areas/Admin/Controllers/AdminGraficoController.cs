@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AspLanches.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class AdminGraficoController : Controller
     {
 
