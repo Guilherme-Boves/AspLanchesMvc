@@ -53,10 +53,6 @@
       "PackagePath": "staticwebassets\\images\\logout_white.png"
     },
     {
-      "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\produtos\\maionese.jpg",
-      "PackagePath": "staticwebassets\\images\\produtos\\maionese.jpg"
-    },
-    {
       "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\remove.ico",
       "PackagePath": "staticwebassets\\images\\remove.ico"
     },

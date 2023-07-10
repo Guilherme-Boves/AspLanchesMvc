@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hfQuKpc9FNbfryciuo+Y9nZfzZ9gHERbl4NWAwyJ3/w=",
+  "Hash": "vQkL8ew3zgo/G5v5A2sQR5cHpi4p0i684ZpP7tN5gNw=",
   "Source": "AspLanches",
   "BasePath": "_content/AspLanches",
   "Mode": "Default",
@@ -253,23 +253,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logout_white.png"
-    },
-    {
-      "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\produtos\\maionese.jpg",
-      "SourceId": "AspLanches",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\",
-      "BasePath": "_content/AspLanches",
-      "RelativePath": "images/produtos/maionese.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\produtos\\maionese.jpg"
     },
     {
       "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\remove.ico",
