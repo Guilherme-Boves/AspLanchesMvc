@@ -21,19 +21,19 @@ namespace AspLanches.Areas.Admin.Controllers
         }
 
         // Calcula as vendas dos últimos 360 dias
-        public IActionResult Index(int dias)
+        public IActionResult Index()
         {
             return View();
         }
 
         // Calculas as vendas dos últimos 30 dias
-        public IActionResult VendasMensal(int dias)
+        public IActionResult VendasMensal()
         {
             return View();
         }
 
         // Calculas as vendas dos últimos 7 dias
-        public IActionResult VendasSemanal(int dias)
+        public IActionResult VendasSemanal()
         {
             return View();
         }
