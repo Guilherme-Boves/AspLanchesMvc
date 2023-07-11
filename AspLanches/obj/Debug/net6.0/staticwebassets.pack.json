@@ -49,12 +49,24 @@
       "PackagePath": "staticwebassets\\images\\delete.png"
     },
     {
+      "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\logout.png",
+      "PackagePath": "staticwebassets\\images\\logout.png"
+    },
+    {
       "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\logout_white.png",
       "PackagePath": "staticwebassets\\images\\logout_white.png"
     },
     {
+      "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\menu_white.png",
+      "PackagePath": "staticwebassets\\images\\menu_white.png"
+    },
+    {
       "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\remove.ico",
       "PackagePath": "staticwebassets\\images\\remove.ico"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\search.png",
+      "PackagePath": "staticwebassets\\images\\search.png"
     },
     {
       "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\js\\site.js",

@@ -5,35 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - AspLanches</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AspLanches.styles.css" asp-append-version="true" />
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light border-bottom box-shadow mb-3 p-4">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AspLanches</a>
+                <a class="navbar-brand text-hover" style="font-size:24px" asp-area="" asp-controller="Home" asp-action="Index"><strong>AspBurgers</strong></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">                    
-                    @await Html.PartialAsync("_LoginPartial")                    
-                    @await Component.InvokeAsync("CarrinhoCompraResumo")
-                    <form class="navbar-form navbar-right me-2" asp-controller="Lanche" asp-action="Search" method="get">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Procurar produto" name="searchString" value="@ViewData["searchString"]" />
-                        </div>
-                    </form>                   
+                <div class="navbar-collapse collapse d-sm-inline-flex d-flex justify-content-center" style="margin-left:40px">
+
+                    <a class="nav-link text-hover" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+                    @await Component.InvokeAsync("CategoriaMenu")
+
+                    <a class="nav-link text-hover" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a>
                     @if (User.IsInRole("Admin"))
                     {
-                        <a class="nav-link text-light" style="margin-left:-10px " asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
+                        <a class="nav-link text-hover" style="margin-left:-10px " asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
                     }
-                    @await Component.InvokeAsync("CategoriaMenu")
-                    <a class="nav-link text-light" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a>
-                    @*<a class="nav-link text-light" asp-area="" asp-controller="Lanche" asp-action="List">Lanches</a>*@
-                    <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    @await Component.InvokeAsync("CarrinhoCompraResumo")
+                    @await Html.PartialAsync("_LoginPartial")
+
                 </div>
+                <form class="navbar-form navbar-right mx-2 d-flex justify-content-end" asp-controller="Lanche" asp-action="Search" method="get">
+                    <div class="input-group">
+                        <input type="text" class="px-2" style="height:30px; border: 1px solid #eee" placeholder="Pesquisar" name="searchString" value="@ViewData["searchString"]" />
+                        <button type="submit" class="input-group-text" style="height:30px; border-radius: 0; background-color:#ffff; border: 1px solid #eee"><img src="~/images/search.png" width="15px" height="15px" /></button>
+                    </div>
+                </form>
             </div>
         </nav>
     </header>
@@ -45,7 +51,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - AspLanches
+            &copy; 2023 - AspBurgers
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

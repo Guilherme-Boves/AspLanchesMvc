@@ -1,12 +1,38 @@
 ﻿@model HomeViewModel
 
-<partial name="_Carousel" />
-<br />
-<h2>Os preferidos da semana</h2>
-<br />
-<div class="row">
-    @foreach(var lanche in Model.LanchesPreferido)
-    {
-        <partial name="_LanchesResumo" for="@lanche" /> 
-    }
+<div style="position: relative; left:calc(-50vw + 50%); width:100vw">
+
+    <div class="row" style="background-color:#eee; margin-top:-16px;">
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <div class="card text-start border-0 bg-transparent" style="width: 24rem;">
+                <div class="card-body">
+                    <h3 class="card-title mb-4">
+                        Não deixe também de conferir nossos burgers vegetarianos :)
+                    </h3>
+                    <p></p>
+                    <h5 class="card-subtitle mb-2 text-muted">Burgers feitos com produtos naturais</h5>
+                    <p></p>
+                    <div>
+                        <a class="btn px-5" style="background-color:#ff1522; color:#fff; border-radius: 20px" asp-controller="Lanche" asp-action="List" asp-route-categoria="Burgers Vegetarianos">
+                            Confira Já
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <partial name="_Carousel" />
+        </div>
+    </div>
+    <br />
+    <div class="container text-center">
+        <div style="font-size:48px"><strong>Nossas <span style="color: #ff1522;">Especialidades</span></strong></div>
+        <br />
+        <div class="row">
+            @foreach (var lanche in Model.LanchesPreferido)
+            {
+                <partial name="_LanchesResumo" for="@lanche" />
+            }
+        </div>
+    </div>
 </div>

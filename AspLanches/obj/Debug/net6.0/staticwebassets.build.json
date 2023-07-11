@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vQkL8ew3zgo/G5v5A2sQR5cHpi4p0i684ZpP7tN5gNw=",
+  "Hash": "wv/dEYmigiHPMLBajXFnhe5ojLaCHKaX3nSDDjYvQU4=",
   "Source": "AspLanches",
   "BasePath": "_content/AspLanches",
   "Mode": "Default",
@@ -238,6 +238,23 @@
       "OriginalItemSpec": "wwwroot\\images\\Full-Cart-icon.png"
     },
     {
+      "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\logout.png",
+      "SourceId": "AspLanches",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\",
+      "BasePath": "_content/AspLanches",
+      "RelativePath": "images/logout.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logout.png"
+    },
+    {
       "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\logout_white.png",
       "SourceId": "AspLanches",
       "SourceType": "Discovered",
@@ -255,6 +272,23 @@
       "OriginalItemSpec": "wwwroot\\images\\logout_white.png"
     },
     {
+      "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\menu_white.png",
+      "SourceId": "AspLanches",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\",
+      "BasePath": "_content/AspLanches",
+      "RelativePath": "images/menu_white.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\menu_white.png"
+    },
+    {
       "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\remove.ico",
       "SourceId": "AspLanches",
       "SourceType": "Discovered",
@@ -270,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\remove.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\search.png",
+      "SourceId": "AspLanches",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\",
+      "BasePath": "_content/AspLanches",
+      "RelativePath": "images/search.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\search.png"
     },
     {
       "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\js\\site.js",

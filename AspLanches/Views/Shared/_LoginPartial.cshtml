@@ -6,16 +6,17 @@
 {
     <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm" method="post" class="navbar-left">
         <ul class="nav navbar-nav navbar-left">
-            <button type="submit" style="width: auto" class="nav-link btn btn-link py-0">
-                <img src="~/images/logout_white.png" width="30" height="25" />
-            </button>            
+            <button type="submit" class="nav-link btn-logout">
+                @*<img src="~/images/logout_white.png" width="30" height="25" />*@
+                Logout
+            </button>
         </ul>
     </form>
 }
 else
 {
     <ul class="nav navbar-nav navbar-left">
-        <a class="nav-link text-light" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)" style="color:white">&nbsp; Log in&nbsp;</a>
-        <a class="nav-link text-light" asp-controller="Account" asp-action="Register" style="color:white">&nbsp;Registro&nbsp;&nbsp;&nbsp; </a>
+        <a class="nav-link text-hover" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path, Context.Request.QueryString)">&nbsp;Login&nbsp;</a>
+        <a class="nav-link text-hover" asp-controller="Account" asp-action="Register">&nbsp;Registro&nbsp;&nbsp;&nbsp; </a>
     </ul>
 }

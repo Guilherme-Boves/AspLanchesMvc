@@ -2,9 +2,9 @@
 
 @if(Model.CarrinhoCompra.CarrinhoCompraItems.Count > 0)
 {
-    <a asp-controller="CarrinhoCompra" asp-action="Index">
-        <span><img src="~/images/cart-5-16.ico"/></span>
-        <span style="color:white">
+    <a asp-controller="CarrinhoCompra" asp-action="Index" class="p-1 text-hover" style="margin-right: 10px">
+        <span><img src="~/images/Full-Cart-icon.png" width="25" height="30"/></span>
+        <span style="color:#7f7f90">
             @Model.CarrinhoCompra.CarrinhoCompraItems.Count
         </span>
     </a>

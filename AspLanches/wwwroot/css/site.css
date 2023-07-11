@@ -1,18 +1,45 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-hover {
+    color: #7f7f90;
+    transition: all 0.3s ease;
+}
+
+.text-hover:hover {
+    color: #000000;
+    border-bottom: 2px solid #ff1522;
+}
+
+.btn-logout {
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover{
+    color: #000000;
+    border-bottom: 2px solid #ff1522;
+}
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    overflow-x: hidden;
+    /*background-color: #eee;*/
 }
