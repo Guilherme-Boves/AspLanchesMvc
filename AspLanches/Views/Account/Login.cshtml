@@ -2,37 +2,43 @@
 
 <table class="table">
     <tr>
-        <td><img src="" alt="Fazer o Login" class="center-block" /></td>
-        <td>
-            <div class="row">
-                <div class="col-10 col-md-10 col-lg-10">
-                    <h4>Login</h4>
+        <td class="d-flex justify-content-center mt-5" style="height: 50vh">
+            <div class="row shadow" style="width:70%;">
+                <div class="col-6 col-md-6 col-lg-6 p-4 p-lg-5" style="border: 1px ">
+                    <div>
+                        <h4 style="font-weight: 300; margin-bottom:30px">Login</h4>
+                    </div>
                     <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal" role="form">
-                        <hr />
-                        <div asp-validation-summary="All" class="text-danger"></div>
                         <input type="hidden" asp-for="ReturnUrl" />
-                        <div class="form-group">
-                            <label asp-for="UserName" class="col-md-2 control-label"></label>
-                            <div class="col-md-6">
-                                <input asp-for="UserName" class="form-control" />
+                        <div class="form-group">                            
+                            <div class="col-md-6 w-100">
+                                <label asp-for="UserName" class="col-md-2 control-label mb-1" style="font-weight: 300"></label>
+                                <input asp-for="UserName" class="form-control border-0 mb-2" style="border-radius: 50px; background-color:rgba(0, 0, 0, 0.05); padding: 10px 10px 10px 20px" />
                                 <span asp-validation-for="UserName" class="text-danger"></span>
                             </div>
                         </div>
-                        <p></p> 
+                        <br >
                         <div class="form-group">
-                            <label asp-for="Password" class="col-md-2 control-label"></label>
-                            <div class="col-md-6">
-                                <input asp-for="Password" class="form-control" />
+                            <div class="col-md-6 w-100">
+                                <label asp-for="Password" class="col-md-2 control-label mb-1" style="font-weight: 300"></label>
+                                <input asp-for="Password" class="form-control border-0 mb-2" style="border-radius: 50px; background-color:rgba(0, 0, 0, 0.05); padding: 10px 10px 10px 20px" />
                                 <span asp-validation-for="Password" class="text-danger"></span>
                             </div>
                         </div>
                         <p></p>
                         <div class="form-group">
-                            <div class="col-md-8">
-                                <input type="submit" class="btn btn-success" value="Log in" />
+                            <div class="col-md-12">
+                                <input type="submit" class="w-100 mt-3 bg-opacity-50 btn-entrar-cadastrar"value="Entrar" />
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-center" style="background-color: #ff1522; opacity: 0.85">
+                    <div class="col-6 text-center" style="color:#fff">
+                        <h2 style="font-weight:900">Bem vindo ao Login</h2>
+                        <h6 style="line-height: 1.8;font-weight:300">Não possui uma conta?</h6>
+                        <a asp-controller="Account" asp-action="Register" class="btn-cadastro-login">Cadastre-se</a>
+                    </div>
                 </div>
             </div>
         </td>

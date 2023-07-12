@@ -2,27 +2,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.text-hover {
-    color: #7f7f90;
-    transition: all 0.3s ease;
-}
-
-.text-hover:hover {
-    color: #000000;
-    border-bottom: 2px solid #ff1522;
-}
-
-.btn-logout {
-    background-color: transparent;
-    border: none;
-    transition: all 0.3s ease;
-}
-
-.btn-logout:hover{
-    color: #000000;
-    border-bottom: 2px solid #ff1522;
-}
-
 html {
     font-size: 14px;
 }
@@ -43,3 +22,57 @@ body {
     overflow-x: hidden;
     /*background-color: #eee;*/
 }
+
+/*  ---------  CSS customizado para determinados componentes  ---------  */
+.text-hover {
+    color: #7f7f90;
+    transition: all 0.3s ease;
+}
+
+    .text-hover:hover {
+        color: #000000;
+        border-bottom: 2px solid #ff1522;
+    }
+
+.btn-logout {
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+    .btn-logout:hover {
+        color: #000000;
+        border-bottom: 2px solid #ff1522;
+    }
+
+.btn-entrar-cadastrar {
+    border-radius: 50px;
+    background-color: #ff1522;
+    opacity: 0.85;
+    color: #fff;
+    padding: 8px;
+    border: 1px solid #f35588;
+    transition: all 0.3s ease;
+}
+
+    .btn-entrar-cadastrar:hover {
+        color: #f35588;
+        background-color: #fff;
+        border: 1px solid #f35588;
+    }
+
+.btn-cadastro-login {
+    line-height: 3;
+    padding: 12px;
+    border-radius: 50px;
+    color: #fff;
+    border: 1px solid #f35588;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+    .btn-cadastro-login:hover {
+        color: #f35588;
+        background-color: #fff;
+    }
