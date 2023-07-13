@@ -4,68 +4,8 @@
     ViewBag.QuantidadeProdutos = 0;
 }
 
-@*<div class="container">
-    <div class="row">
-
-        <div class="text-center">
-            <img src="~/images/Full-Cart-icon.png" class="me-3" width="30" height="35" alt="Imagem do carrinho de compras" />
-            <h4>Seu carrinho de compras </h4>
-        </div>
-
-        <table class="table table-bordered table-striped">
-
-            <thead>
-                <tr>
-                    <th>Quantidade</th>
-                    <th>Lanche</th>
-                    <th class=" text-right">Preço</th>
-                    <th class=" text-right">Subtotal</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model.CarrinhoCompra.CarrinhoCompraItems)
-                {
-                    <tr>
-                        <td class="text-center">@item.Quantidade</td>
-                        <td class="text-left">@item.Lanche.Nome</td>
-                        <td class="text-right">@item.Lanche.Preco.ToString("c")</td>
-
-                        <td class="text-right">
-                            @((item.Quantidade * item.Lanche.Preco).ToString("c"))
-                        </td>
-
-                        <td class="text-center">
-                            <a asp-controller="CarrinhoCompra" asp-action="RemoverItemDoCarrinhoCompra" asp-route-lancheId="@item.Lanche.LancheId">
-                                <img src="~/images/delete.png" alt="ícone lixeira" width="18" height="18" />
-                            </a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3" class="text-right">Total:</td>
-                    <td class="text-right">
-                        @Model.CarrinhoCompraTotal.ToString("c")
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
-
-        <div class="text-right">
-            <div class="btn-group">
-                <a class="btn btn-success" style="border-radius: 50px" asp-controller="Pedido" asp-action="Checkout">Encerrar Pedido</a>
-                    &nbsp;&nbsp;&nbsp;
-                <a class="btn btn-outline-info" style="border-radius: 50px" asp-controller="Lanche" asp-action="List">Continuar Comprando</a>
-            </div>
-        </div>
-        <br />
-    </div>
-</div>
-*@
 <div class="row">
-   <div class="col-8 col-md-8 col-lg-8 shadow p-5" style="border-radius: 40px 0 0 40px">       
+   <div class="col-12 col-md-12 col-lg-12 shadow p-5" style="border-radius: 40px /*border-radius: 40px 0 0 40px*/">
        <h3>Seu Carrinho de Compras</h3>
        <hr />
         <table class="table mt-2">            
@@ -73,7 +13,7 @@
                 @foreach (var item in Model.CarrinhoCompra.CarrinhoCompraItems)
                 {
                     <tr class="align-middle">
-                        <td><img src="@item.Lanche.ImagemUrl" width="120" height="120" style="object-fit: cover" /></td>
+                        <td><img src="@item.Lanche.ImagemUrl" width="100" height="100" style="object-fit: cover" /></td>
                         <td class="text-center">@item.Lanche.Nome</td>
                         <td class="text-center">@item.Quantidade</td>
                         <td class="text-center">@((item.Quantidade * @item.Lanche.Preco).ToString("c"))</td>
@@ -87,14 +27,27 @@
                 }
             </tbody>
         </table>
-       @* <a class="text-decoration-none text-dark" style="" asp-controller="Lanche" asp-action="List"> < -- Continuar Comprando</a>*@
-         <a class="btn btn-outline-info" style="" asp-controller="Lanche" asp-action="List">Continuar Comprando</a>
+        <div class=" d-flex justify-content-between mx-1 mb-2">
+            <h6>Quantidade de Produto(s): @ViewBag.QuantidadeProdutos</h6>
+            <h6 style="font-size: 18px">Preço total @Model.CarrinhoCompraTotal.ToString("c")</h6>
+        </div>               
+         <div class="d-flex justify-content-between">
+            <a class="btn btn-outline-info" style="" asp-controller="Lanche" asp-action="List">Continuar Comprando</a>
+            @if (ViewBag.QuantidadeProdutos <= 0 )
+            {
+                <a class="btn btn-success disabled">Encerrar Pedido</a>
+            }
+            else
+            {
+                <a class="btn btn-success" asp-controller="Pedido" asp-action="Checkout">Encerrar Pedido</a>
+            }
+         </div>
    </div>
-    <div class="col-4 col-md-4 col-lg-4 shadow p-5" style="background-color: #eee; border-radius: 0 40px 40px 0">
+   @* <div class="col-4 col-md-4 col-lg-4 shadow p-5" style="background-color: #eee; border-radius: 0 40px 40px 0">
         <h3>Súmario</h3>
         <hr />
         <div>
             <h6>@ViewBag.QuantidadeProdutos produto(s)</h6>
         </div>
-   </div>
+   </div>*@
 </div>
