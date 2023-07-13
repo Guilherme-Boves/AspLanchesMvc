@@ -1,8 +1,12 @@
 ﻿@model CarrinhoCompraViewModel
 
-<div class="container">
+@{
+    ViewBag.QuantidadeProdutos = 0;
+}
+
+@*<div class="container">
     <div class="row">
-        
+
         <div class="text-center">
             <img src="~/images/Full-Cart-icon.png" class="me-3" width="30" height="35" alt="Imagem do carrinho de compras" />
             <h4>Seu carrinho de compras </h4>
@@ -51,11 +55,46 @@
 
         <div class="text-right">
             <div class="btn-group">
-                <a class="btn btn-success" asp-controller="Pedido" asp-action="Checkout">Encerrar Pedido</a>
+                <a class="btn btn-success" style="border-radius: 50px" asp-controller="Pedido" asp-action="Checkout">Encerrar Pedido</a>
                     &nbsp;&nbsp;&nbsp;
-                <a class="btn btn-primary" asp-controller="Lanche" asp-action="List">Continuar Comprando</a>
+                <a class="btn btn-outline-info" style="border-radius: 50px" asp-controller="Lanche" asp-action="List">Continuar Comprando</a>
             </div>
         </div>
         <br />
     </div>
+</div>
+*@
+<div class="row">
+   <div class="col-8 col-md-8 col-lg-8 shadow p-5" style="border-radius: 40px 0 0 40px">       
+       <h3>Seu Carrinho de Compras</h3>
+       <hr />
+        <table class="table mt-2">            
+            <tbody>
+                @foreach (var item in Model.CarrinhoCompra.CarrinhoCompraItems)
+                {
+                    <tr class="align-middle">
+                        <td><img src="@item.Lanche.ImagemUrl" width="120" height="120" style="object-fit: cover" /></td>
+                        <td class="text-center">@item.Lanche.Nome</td>
+                        <td class="text-center">@item.Quantidade</td>
+                        <td class="text-center">@((item.Quantidade * @item.Lanche.Preco).ToString("c"))</td>
+                        <td class="text-center">
+                            <a class="text-decoration-none text-danger" asp-controller="CarrinhoCompra" asp-action="RemoverItemDoCarrinhoCompra" asp-route-lancheId="@item.Lanche.LancheId">
+                                x
+                            </a>
+                        </td>
+                    </tr>
+                    ViewBag.QuantidadeProdutos += item.Quantidade;
+                }
+            </tbody>
+        </table>
+       @* <a class="text-decoration-none text-dark" style="" asp-controller="Lanche" asp-action="List"> < -- Continuar Comprando</a>*@
+         <a class="btn btn-outline-info" style="" asp-controller="Lanche" asp-action="List">Continuar Comprando</a>
+   </div>
+    <div class="col-4 col-md-4 col-lg-4 shadow p-5" style="background-color: #eee; border-radius: 0 40px 40px 0">
+        <h3>Súmario</h3>
+        <hr />
+        <div>
+            <h6>@ViewBag.QuantidadeProdutos produto(s)</h6>
+        </div>
+   </div>
 </div>
