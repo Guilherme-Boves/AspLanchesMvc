@@ -1,17 +1,17 @@
 ﻿@model Lanche
 
-<div class="card col-sm-4 col-md-4 col-lg-4" style="width: 18rem;margin-right: 30px">
+<div class="card col-sm-4 col-md-4 col-lg-4 mb-4 shadow border-0" style="width: 18rem; margin-right: 30px; left:25px">
     <div>
-        <img src="@Model.ImagemUrl" class="card-img-top" alt="@Model.Nome - Img">
+        <img src="@Model.ImagemUrl" class="card-img-top mt-1 pt-2 rounded" style="object-fit:cover;" alt="@Model.Nome - Img" width="225" height="225">
     </div>
-    <div class="card-body">
-        <h5><a class="card-title" style="text-decoration: none;" asp-controller="Lanche" asp-action="Details" asp-route-lancheId="@Model.LancheId">@Model.Nome</a></h5>
+    <div class="card-body d-flex flex-column">
+        <h5><a class="card-title" style="text-decoration: none; color: #000000; font-weight:bold" asp-controller="Lanche" asp-action="Details" asp-route-lancheId="@Model.LancheId">@Model.Nome</a></h5>
         <p></p>
         <h6 class="card-subtitle mb-2 text-muted">R$ @Model.Preco</h6>
         <p class="card-text">@Model.DescricaoCurta</p>
-        <div>
-            <a class="btn btn-primary" asp-controller="CarrinhoCompra" 
-                asp-action="AdicionarItemNoCarrinhoCompra" asp-route-lancheId="@Model.LancheId">
+        <div class="mt-auto">
+            <a class="btn w-100" style="background-color:#ff1522; color:#fff;" asp-controller="CarrinhoCompra"
+               asp-action="AdicionarItemNoCarrinhoCompra" asp-route-lancheId="@Model.LancheId">
                 Incluir no Carrinho
             </a>
         </div>

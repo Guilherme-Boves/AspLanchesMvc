@@ -49,6 +49,18 @@
       "PackagePath": "staticwebassets\\images\\delete.png"
     },
     {
+      "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\email.png",
+      "PackagePath": "staticwebassets\\images\\email.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\github.png",
+      "PackagePath": "staticwebassets\\images\\github.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\link.png",
+      "PackagePath": "staticwebassets\\images\\link.png"
+    },
+    {
       "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\logout.png",
       "PackagePath": "staticwebassets\\images\\logout.png"
     },
@@ -59,6 +71,10 @@
     {
       "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\menu_white.png",
       "PackagePath": "staticwebassets\\images\\menu_white.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\phone.png",
+      "PackagePath": "staticwebassets\\images\\phone.png"
     },
     {
       "Id": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\remove.ico",

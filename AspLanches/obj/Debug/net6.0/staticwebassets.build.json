@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wv/dEYmigiHPMLBajXFnhe5ojLaCHKaX3nSDDjYvQU4=",
+  "Hash": "k7Uc8GMZTUz1R+MYB+SAx5rmuxBUhTtO2cEvgC1ouEk=",
   "Source": "AspLanches",
   "BasePath": "_content/AspLanches",
   "Mode": "Default",
@@ -221,6 +221,23 @@
       "OriginalItemSpec": "wwwroot\\images\\delete.png"
     },
     {
+      "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\email.png",
+      "SourceId": "AspLanches",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\",
+      "BasePath": "_content/AspLanches",
+      "RelativePath": "images/email.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\email.png"
+    },
+    {
       "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\Full-Cart-icon.png",
       "SourceId": "AspLanches",
       "SourceType": "Discovered",
@@ -236,6 +253,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Full-Cart-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\github.png",
+      "SourceId": "AspLanches",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\",
+      "BasePath": "_content/AspLanches",
+      "RelativePath": "images/github.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\github.png"
+    },
+    {
+      "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\link.png",
+      "SourceId": "AspLanches",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\",
+      "BasePath": "_content/AspLanches",
+      "RelativePath": "images/link.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\link.png"
     },
     {
       "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\logout.png",
@@ -287,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\menu_white.png"
+    },
+    {
+      "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\phone.png",
+      "SourceId": "AspLanches",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\",
+      "BasePath": "_content/AspLanches",
+      "RelativePath": "images/phone.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\phone.png"
     },
     {
       "Identity": "C:\\Users\\Guilherme Boves\\Desktop\\Curso ASP.NET CORE\\AspLanches\\AspLanches\\wwwroot\\images\\remove.ico",
